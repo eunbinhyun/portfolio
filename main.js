@@ -19,7 +19,6 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return; // 우리가 원하는 데이터가 아니면 아무것도 하지 않음.
   }
-
   scrollIntoView(link);
 });
 
@@ -61,6 +60,14 @@ workBtnContainer.addEventListener("click", (e) => {
   if (filter == null) {
     return;
   }
+
+  //Remove selection from the previous item and select a new one
+  const active = document.querySelector(".category__btn.selected");
+  active.classList.remove("selected");
+  const target =
+    e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+  target.classList.add("selected");
+
   projectContainer.classList.add("anim-out");
   setTimeout(() => {
     projects.forEach((project) => {
