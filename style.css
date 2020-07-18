@@ -96,12 +96,6 @@ p {
 }
 
 /* Navbar */
-#navbar__favicon {
-  width: 28px;
-
-  position: relative;
-  top: 3px;
-}
 #navbar {
   position: fixed;
   width: 100%;
@@ -121,6 +115,7 @@ p {
   border-bottom: 1px solid var(--color-lightest-grey);
   opacity: 0.9;
 }
+
 .navbar__menu {
   display: flex;
 }
@@ -142,7 +137,8 @@ p {
 .navbar__menu__item:hover {
   color: var(--color-white);
   border-color: var(--color-white);
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-violet);
+
   border-radius: var(--size--border-radius);
 }
 
@@ -193,7 +189,7 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-violet);
 }
 
 /* Section common */
@@ -317,6 +313,9 @@ p {
   padding: 20px;
 }
 
+#skills {
+  background-color: rgb(238, 238, 238);
+}
 /* Work */
 .work__categories {
   margin: 40px;
@@ -332,7 +331,7 @@ p {
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-violet);
   color: var(--color-white);
 }
 
@@ -343,7 +342,7 @@ p {
 }
 
 .category__count {
-  background-color: var(--color-orange);
+  background-color: var(--color-pink);
   border-radius: 50%;
   color: var(--color-white);
   width: 24px;
@@ -469,7 +468,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: #cfc1ed;
 }
 
 .contact__title,
@@ -504,14 +503,19 @@ p {
   width: 70px;
   height: 70px;
   font-size: 50px;
-  background-color: var(--color-dark-pink);
-  color: var(--color-white);
+  border: 1px solid var(--color-lightest-grey);
+  background-color: var(--color-white);
+  color: var(--color-light-grey);
   border-radius: 50%;
   opacity: 0;
   transition: opacity 300ms ease-in;
   pointer-events: none;
 }
-
+.arrow-up:hover {
+  border: 1px solid var(--color-violet);
+  background-color: var(--color-violet);
+  color: var(--color-white);
+}
 .arrow-up.visible {
   opacity: 1;
   pointer-events: auto;
