@@ -2,17 +2,23 @@
 
 // Make navbar transparent when it is on the top
 const navbar = document.querySelector("#navbar");
+const navbarMenu = document.querySelector(".navbar__menu");
+const navbarLogo = document.querySelector(".navbar__logo");
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   if (window.scrollY > navbarHeight) {
     navbar.classList.add("navbar--dark");
+    navbarMenu.classList.add("navbar__menu--dark");
+    navbarLogo.classList.add("navbar__menu--dark");
   } else {
     navbar.classList.remove("navbar--dark");
+    navbarMenu.classList.remove("navbar__menu--dark");
+    navbarLogo.classList.remove("navbar__menu--dark");
   }
 });
 
 // Handle scrolling when tapping on the navbar menu
-const navbarMenu = document.querySelector(".navbar__menu");
+
 navbarMenu.addEventListener("click", (event) => {
   const target = event.target;
   const link = target.dataset.link;
