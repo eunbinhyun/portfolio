@@ -241,6 +241,70 @@ p {
   font-size: var(--font-small);
 }
 
+.about__titles {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+}
+
+.job__description {
+  text-align: left;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.job__name,
+.job__period {
+  color: var(--color-light-grey);
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+
+.job__period {
+  margin-left: 8%;
+  font-size: var(--font-micro);
+}
+
+.award {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.award__description {
+  text-align: left;
+  margin-left: 16px;
+}
+
+.award__name,
+.award__date,
+.award__organization {
+  color: var(--color-light-grey);
+}
+
+.award__name {
+  font-size: var(--font-small);
+}
+
+.award__organization {
+  margin-left: 10px;
+}
+
+.award__date,
+.award__organization {
+  font-size: var(--font-micro);
+}
+
+.award__date {
+  margin-left: 8px;
+}
+
 /* Skill */
 .skillset {
   display: flex;
