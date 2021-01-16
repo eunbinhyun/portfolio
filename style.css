@@ -317,6 +317,10 @@ p {
 .skillset__title {
   color: var(--color-white);
 }
+
+.tools__list{
+  color:var(--color-white);
+}
 .skillset__left {
   flex-basis: 60%;
   background-color: var(--color-dark-grey);
