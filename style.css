@@ -306,6 +306,14 @@ p {
   margin-left: 8px;
 }
 
+.artist__picture {
+  margin: 10px 5px;
+}
+.artist__picture img{
+  width: 183px;
+  height: 183px;
+}
+
 /* Skill */
 .skillset {
   display: flex;
@@ -469,49 +477,6 @@ p {
   background-color: var(--color-dark-white);
 }
 
-/* Testimonial */
-#testimonial {
-  background-color: var(--color-light-white);
-}
-
-.testimonials {
-  margin: 40px;
-}
-
-.testimonial {
-  display: flex;
-  margin: 32px 0;
-}
-
-.testimonial__avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 12px;
-}
-
-.testimonial__avatar:nth-child(odd) {
-  margin-right: 40px;
-}
-
-.testimonial__avatar:nth-child(even) {
-  margin-left: 40px;
-}
-
-.testimonial__speech-bubble {
-  padding: 18px;
-  background-color: var(--color-white);
-  border-radius: var(--size--border-radius);
-}
-
-.testimonial__speech-bubble p {
-  color: var(--color-light-grey);
-}
-
-.testimonial__speech-bubble a {
-  color: var(--color-pink);
-}
-
 /* Contact */
 #contact {
   background-color: #cfc1ed;
@@ -546,9 +511,9 @@ p {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  width: 70px;
-  height: 70px;
-  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
   border: 1px solid var(--color-lightest-grey);
   background-color: var(--color-white);
   color: var(--color-light-grey);

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .marker-wrapper {
+      position: relative;
+    }
+
+    .marker {
+      width: fit-content;
+      height: 43px;
+      border-radius: 23px;
+      padding: 5px;
+      box-sizing: border-box;
+      background-color: #0475f4;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: normal;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tail {
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 17px;
+
+      bottom: -5px;
+      border-color: #0475f4 transparent transparent;
+      border-style: solid;
+      border-width: 6px 4px 0;
+      pointer-events: none;
+    }
+
+    .tail:after {
+      opacity: .1;
+      position: absolute;
+      bottom: -2px;
+      left: -5px;
+      width: 10px;
+      height: 3px;
+      background-color: #000;
+      filter: blur(1px);
+      content: "";
+    }
+
+    .text {
+      font-size: 14px;
+      height: 33px;
+      padding-left: 5px;
+      padding-right: 7px;
+      line-height: 33px;
+      font-weight: 900;
+    }
+
+    .icon-area {
+      width: 33px;
+      height: 33px;
+      background-color: #fff;
+      border-radius: 50%;
+      ;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="marker-wrapper">
+
+    <div class="marker">
+      <div class="icon-area"></div>
+      <span class="text">서울특별시 마포구 월드컵북로 396</span>
+
+      <div class="tail"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
